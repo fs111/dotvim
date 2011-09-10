@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 set nocompatible
 set mousemodel=popup
 set nu
@@ -32,6 +34,5 @@ set ls=2
 set statusline=%F%m%r%h%w\ (%{&ff}){%y}[%l,%v][%p%%]\ %{strftime(\"%d.%m.%Y\ -\ %H:%M\")}
 
 
-call pathogen#infect()
 
-colo fruity
+colo desert
