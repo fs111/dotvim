@@ -7,6 +7,3 @@
 [submodule "bundle/ack.vim"]
 	path = bundle/ack.vim
 	url = https://github.com/mileszs/ack.vim
-[submodule "autoload/fruity.vim"]
-	path = autoload/fruity.vim
-	url = https://github.com/vim-scripts/fruity.vim.git
