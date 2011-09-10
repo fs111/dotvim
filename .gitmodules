@@ -11,5 +11,5 @@
 	path = bundle/fruity.vim
 	url = https://github.com/vim-scripts/fruity.vim.git
 [submodule "autoload/SuperTab"]
-	path = autoload/SuperTab
+	path = bundle/SuperTab
 	url = https://github.com/vim-scripts/SuperTab.git
