@@ -1,0 +1,12 @@
+[submodule "bundle/pydoc.vim"]
+	path = bundle/pydoc.vim
+	url = https://fs111@github.com/fs111/pydoc.vim.git
+[submodule "bundle/matchit"]
+	path = bundle/matchit
+	url = git://github.com/vim-scripts/matchit.zip.git
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim
+[submodule "autoload/fruity.vim"]
+	path = autoload/fruity.vim
+	url = https://github.com/vim-scripts/fruity.vim.git
