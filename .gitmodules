@@ -10,6 +10,3 @@
 [submodule "bundle/fruity.vim"]
 	path = bundle/fruity.vim
 	url = https://github.com/vim-scripts/fruity.vim.git
-[submodule "bundle/SuperTab"]
-	path = bundle/SuperTab
-	url = https://github.com/vim-scripts/SuperTab.git
