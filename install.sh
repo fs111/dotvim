@@ -1,3 +1,3 @@
 #!/bin/bash
-ln -s vimrc $HOME/.vimrc
-ln -s gvimrc $HOME/.gvimrc
+ln -s $PWD/vimrc $HOME/.vimrc
+ln -s $PWD/gvimrc $HOME/.gvimrc
