@@ -15,6 +15,7 @@ set visualbell
 syntax on
 set wildmenu
 set ai
+set smartindent
 set ruler
 set ttyfast 
 set showmatch
