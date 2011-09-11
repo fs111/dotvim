@@ -39,4 +39,7 @@ set relativenumber
 " save stuff automatically
 au FocusLost * :wa
 
-colo desert
+
+" colors!
+set t_Co=256
+colo molokai
