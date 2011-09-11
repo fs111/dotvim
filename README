@@ -1,6 +1,9 @@
-all my your vim stuff, are belong to you now
+all my vim stuff, are belong to you!
 
-git clone https://github.com/fs111/dotvim
+
+cd ~
+git clone https://github.com/fs111/dotvim .vim
+cd .vim
 git submodule init
 git submodule update
 ./install.sh
