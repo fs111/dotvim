@@ -48,3 +48,7 @@ au FocusLost * :wa
 " colors!
 set t_Co=256
 colo molokai
+
+" some xml stuff
+
+command! -nargs=0 FormatXml :silent 1,$!xmllint --format --recover - 2>/dev/null
