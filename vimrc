@@ -35,7 +35,11 @@ set ls=2
 set statusline=%F%m%r%h%w\ (%{&ff}){%y}[%l,%v][%p%%]\ %{strftime(\"%d.%m.%Y\ -\ %H:%M\")}
 
 " line numbers relative from the current one
-set relativenumber
+if version >= 730
+    set relativenumber
+else
+    set nu
+endif
 
 " save stuff automatically
 au FocusLost * :wa
