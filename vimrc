@@ -42,7 +42,10 @@ else
 endif
 
 " save stuff automatically
-au FocusLost * :wa
+"au FocusLost * :wa
+
+" avro idl support
+au BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
 
 
 " colors!

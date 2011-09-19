@@ -22,3 +22,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/avro-vim"]
+	path = bundle/avro-vim
+	url = https://github.com/fs111/avro-vim.git
