@@ -6,7 +6,12 @@ set nocompatible
 " useful for gvim
 set mousemodel=popup
 set hidden
+
 set nohlsearch
+set incsearch
+set ignorecase
+set smartcase
+
 set ts=4
 set shiftwidth=4
 set et!
