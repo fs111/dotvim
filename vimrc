@@ -11,6 +11,7 @@ set nohlsearch
 set incsearch
 set ignorecase
 set smartcase
+set nowrap
 
 set ts=4
 set shiftwidth=4
