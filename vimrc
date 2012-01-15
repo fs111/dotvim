@@ -1,8 +1,7 @@
-filetype off
 call pathogen#infect()
+syntax on
 filetype plugin indent on
 
-set nocompatible
 " useful for gvim
 set mousemodel=popup
 set hidden
@@ -16,13 +15,10 @@ set nowrap
 set ts=4
 set shiftwidth=4
 set et!
-set mousemodel=popup
 set visualbell
-syntax on
 set wildmenu
 set ai
 set smartindent
-set ruler
 set ttyfast 
 set showmatch
 set backspace=2
@@ -41,7 +37,7 @@ set ls=2
 set statusline=%F%m%r%h%w\ (%{&ff}){%y}[%l,%v][%p%%]\ %{strftime(\"%d.%m.%Y\ -\ %H:%M\")}
 
 " line numbers relative from the current one
-if version >= 730
+if version >= 703
     set relativenumber
 else
     set nu
