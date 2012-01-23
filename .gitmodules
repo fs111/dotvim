@@ -25,3 +25,6 @@
 [submodule "bundle/avro-vim"]
 	path = bundle/avro-vim
 	url = https://github.com/fs111/avro-vim.git
+[submodule "bundle/pathogen"]
+	path = bundle/pathogen
+	url = https://github.com/tpope/vim-pathogen.git
