@@ -52,6 +52,9 @@ au BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
 " gitit wiki pages are markdown
 au BufRead,BufNewFile *.page setlocal filetype=markdown
 
+" gradle build files
+au BufRead,BufNewFile *.gradle setlocal filetype=groovy
+
 " colors!
 set t_Co=256
 colo molokai
