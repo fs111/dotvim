@@ -43,3 +43,6 @@
 [submodule "bundle/vim-scala"]
 	path = bundle/vim-scala
 	url = https://github.com/derekwyatt/vim-scala.git
+[submodule "bundle/focus.vim"]
+	path = bundle/focus.vim
+	url = https://github.com/merlinrebrovic/focus.vim.git
