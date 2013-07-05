@@ -46,3 +46,6 @@
 [submodule "bundle/focus.vim"]
 	path = bundle/focus.vim
 	url = https://github.com/merlinrebrovic/focus.vim.git
+[submodule "bundle/vim-numbertoggle"]
+	path = bundle/vim-numbertoggle
+	url = git://github.com/jeffkreeftmeijer/vim-numbertoggle.git
