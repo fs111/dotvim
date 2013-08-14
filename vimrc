@@ -55,6 +55,8 @@ au BufRead,BufNewFile *.page setlocal filetype=markdown
 " gradle build files
 au BufRead,BufNewFile *.gradle setlocal filetype=groovy
 
+" gradle build files
+au BufRead,BufNewFile *.adoc setlocal filetype=asciidoc
 " colors!
 set t_Co=256
 colo molokai
