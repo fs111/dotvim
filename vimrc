@@ -30,6 +30,8 @@ map <C-K> <C-W>k<C-W>_
 map <C-H> <C-W>h<C-W>_
 map <C-L> <C-W>l<C-W>_
 
+map ,, gqap
+
 set textwidth=80
 
 
