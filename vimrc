@@ -68,3 +68,10 @@ command! -nargs=0 FormatXml :silent 1,$!xmllint --format --recover - 2>/dev/null
 
 " toggle outline
 map <F8> :TagbarToggle<CR> 
+
+
+" Return to last edit position when opening files (You want this!)
+autocmd BufReadPost *
+     \ if line("'\"") > 0 && line("'\"") <= line("$") |
+     \   exe "normal! g`\"" |
+     \ endif
