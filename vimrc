@@ -1,5 +1,3 @@
-source $HOME/.vim/bundle/pathogen/autoload/pathogen.vim
-call pathogen#infect()
 syntax on
 filetype plugin indent on
 
@@ -61,7 +59,6 @@ au BufRead,BufNewFile *.gradle setlocal filetype=groovy
 au BufRead,BufNewFile *.adoc setlocal filetype=asciidoc
 " colors!
 set t_Co=256
-colo molokai
 
 " some xml stuff
 command! -nargs=0 FormatXml :silent 1,$!xmllint --format --recover - 2>/dev/null
@@ -77,3 +74,33 @@ autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
      \ endif
+
+
+
+
+" Install vim-plug if not found
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
+
+call plug#begin('~/.vim/plugged')
+Plug 'majutsushi/tagbar'
+Plug 'ervandew/supertab'
+Plug 'tpope/vim-fugitive'
+Plug 'mitsuhiko/fruity-vim-colorscheme'
+Plug 'tpope/vim-surround'
+Plug 'mileszs/ack.vim'
+Plug 'vim-scripts/matchit.zip'
+Plug 'vim-airline/vim-airline'
+Plug 'scrooloose/nerdtree'
+Plug 'easymotion/vim-easymotion'
+Plug 'itspriddle/vim-shellcheck'
+Plug 'srcery-colors/srcery-vim'
+call plug#end()
+
+colo srcery
+
+" Run PlugInstall if there are missing plugins
+"autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
+"  \| PlugInstall --sync | source $MYVIMRC

@@ -1,2 +1,5 @@
 *.sw[a-z]
 .netrwhist
+bundle/*
+autoload/*
+plugged/*
