@@ -30,7 +30,9 @@ map <C-L> <C-W>l<C-W>_
 
 map ,, gqap
 
-set textwidth=80
+set textwidth=120
+
+set cursorline
 
 
 " always have a statusline
