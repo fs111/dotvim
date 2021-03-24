@@ -28,6 +28,8 @@ map <C-K> <C-W>k<C-W>_
 map <C-H> <C-W>h<C-W>_
 map <C-L> <C-W>l<C-W>_
 
+
+let mapleader=","
 map ,, gqap
 
 set textwidth=120
@@ -96,13 +98,13 @@ Plug 'mileszs/ack.vim'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
-Plug 'easymotion/vim-easymotion'
 Plug 'itspriddle/vim-shellcheck'
 Plug 'srcery-colors/srcery-vim'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 colo srcery
-
+let g:airline_theme="light"
 " Run PlugInstall if there are missing plugins
 "autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 "  \| PlugInstall --sync | source $MYVIMRC
