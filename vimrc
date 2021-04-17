@@ -17,7 +17,7 @@ set et!
 set visualbell
 set wildmenu
 set ai
-set smartindent
+set autoindent
 set ttyfast 
 set showmatch
 set backspace=2
