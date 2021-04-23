@@ -101,6 +101,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'itspriddle/vim-shellcheck'
 Plug 'srcery-colors/srcery-vim'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 colo srcery
