@@ -102,6 +102,7 @@ Plug 'itspriddle/vim-shellcheck'
 Plug 'srcery-colors/srcery-vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vimwiki/vimwiki'
+Plug 'gelguy/wilder.nvim'
 call plug#end()
 
 colo srcery
@@ -109,3 +110,12 @@ let g:airline_theme="light"
 " Run PlugInstall if there are missing plugins
 "autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 "  \| PlugInstall --sync | source $MYVIMRC
+
+" wilder.nvim setup
+call wilder#enable_cmdline_enter()
+set wildcharm=<Tab>
+cmap <expr> <Tab> wilder#in_context() ? wilder#next() : "\<Tab>"
+cmap <expr> <S-Tab> wilder#in_context() ? wilder#previous() : "\<S-Tab>"
+
+" only / and ? are enabled by default
+call wilder#set_option('modes', ['/', '?', ':'])
