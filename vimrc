@@ -11,6 +11,8 @@ set ignorecase
 set smartcase
 set nowrap
 
+set dir=~/tmp/
+
 set ts=4
 set shiftwidth=4
 set et!
