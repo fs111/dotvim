@@ -105,6 +105,7 @@ Plug 'srcery-colors/srcery-vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vimwiki/vimwiki'
 Plug 'gelguy/wilder.nvim'
+Plug 'mtth/scratch.vim'
 call plug#end()
 
 colo srcery
@@ -121,3 +122,6 @@ cmap <expr> <S-Tab> wilder#in_context() ? wilder#previous() : "\<S-Tab>"
 
 " only / and ? are enabled by default
 call wilder#set_option('modes', ['/', '?', ':'])
+
+
+let g:scratch_persistence_file='~/tmp/.vimscratch'
