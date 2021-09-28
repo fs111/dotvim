@@ -106,6 +106,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vimwiki/vimwiki'
 Plug 'gelguy/wilder.nvim'
 Plug 'mtth/scratch.vim'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 colo srcery
