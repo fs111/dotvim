@@ -109,6 +109,10 @@ Plug 'mtth/scratch.vim'
 Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
+if has('mac')
+    set termguicolors
+endif
+
 colo srcery
 let g:airline_theme="light"
 " Run PlugInstall if there are missing plugins
