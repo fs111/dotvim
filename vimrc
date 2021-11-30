@@ -1,8 +1,6 @@
 syntax on
 filetype plugin indent on
 
-" useful for gvim
-set mousemodel=popup
 set hidden
 
 set nohlsearch
@@ -17,12 +15,11 @@ set ts=4
 set shiftwidth=4
 set et!
 set visualbell
-set wildmenu
-set ai
 set autoindent
 set ttyfast 
 set showmatch
 set backspace=2
+set wildmenu
 set wildignore=*.o,*.class,*.so*,*.swp,*.pyc,*.pyo,core
 set wildmode=longest:full
 map <C-J> <C-W>j<C-W>_
@@ -38,22 +35,14 @@ set textwidth=120
 
 set cursorline
 
-
 " always have a statusline
-set ls=2
+set laststatus=2
 set statusline=%F%m%r%h%w\ (%{&ff}){%y}[%l,%v][%p%%]\ %{strftime(\"%d.%m.%Y\ -\ %H:%M\")}
 
-" line numbers relative from the current one
-if version >= 703
-    set relativenumber
-else
-    set nu
-endif
-
+set relativenumber
 
 " avro idl support
 au BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
-
 
 " gitit wiki pages are markdown
 au BufRead,BufNewFile *.page setlocal filetype=markdown
@@ -61,7 +50,7 @@ au BufRead,BufNewFile *.page setlocal filetype=markdown
 " gradle build files
 au BufRead,BufNewFile *.gradle setlocal filetype=groovy
 
-" gradle build files
+" asciidoc files
 au BufRead,BufNewFile *.adoc setlocal filetype=asciidoc
 " colors!
 set t_Co=256
@@ -74,15 +63,11 @@ command! -nargs=0 FormatJson :silent 1,$!jq '.' 2>/dev/null
 " toggle outline
 map <F8> :TagbarToggle<CR> 
 
-
 " Return to last edit position when opening files (You want this!)
 autocmd BufReadPost *
      \ if line("'\"") > 0 && line("'\"") <= line("$") |
      \   exe "normal! g`\"" |
      \ endif
-
-
-
 
 " Install vim-plug if not found
 if empty(glob('~/.vim/autoload/plug.vim'))
@@ -95,8 +80,6 @@ Plug 'majutsushi/tagbar'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-fugitive'
 Plug 'mitsuhiko/fruity-vim-colorscheme'
-Plug 'tpope/vim-surround'
-Plug 'mileszs/ack.vim'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
