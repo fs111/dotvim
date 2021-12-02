@@ -52,8 +52,6 @@ au BufRead,BufNewFile *.gradle setlocal filetype=groovy
 
 " asciidoc files
 au BufRead,BufNewFile *.adoc setlocal filetype=asciidoc
-" colors!
-set t_Co=256
 
 " some xml stuff
 command! -nargs=0 FormatXml :silent 1,$!xmllint --format --recover - 2>/dev/null
@@ -112,5 +110,5 @@ cmap <expr> <S-Tab> wilder#in_context() ? wilder#previous() : "\<S-Tab>"
 " only / and ? are enabled by default
 call wilder#set_option('modes', ['/', '?', ':'])
 
-
+" scratch file location
 let g:scratch_persistence_file='~/tmp/.vimscratch'
