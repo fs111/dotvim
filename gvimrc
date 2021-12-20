@@ -6,4 +6,3 @@ set guioptions-=T
 set guioptions-=m
 " useful for gvim
 set mousemodel=popup
-colo srcery
