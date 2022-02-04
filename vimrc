@@ -50,6 +50,9 @@ au BufRead,BufNewFile *.page setlocal filetype=markdown
 " gradle build files
 au BufRead,BufNewFile *.gradle setlocal filetype=groovy
 
+" Jenkinsfile
+au BufRead,BufNewFile Jenkinsfile setlocal filetype=groovy
+
 " asciidoc files
 au BufRead,BufNewFile *.adoc setlocal filetype=asciidoc
 
