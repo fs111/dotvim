@@ -61,6 +61,9 @@ command! -nargs=0 FormatXml :silent 1,$!xmllint --format --recover - 2>/dev/null
 
 command! -nargs=0 FormatJson :silent 1,$!jq '.' 2>/dev/null
 
+" sql formatter. part of the sqlparse python package
+command! -nargs=0 FormatSQL :silent 1,$!sqlformat-3.10 -k upper -a -s - 2>/dev/null
+
 " toggle outline
 map <F8> :TagbarToggle<CR> 
 
