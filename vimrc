@@ -95,6 +95,7 @@ Plug 'gelguy/wilder.nvim'
 Plug 'mtth/scratch.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fs111/vim-ripgrep'
+Plug 'jaawerth/fennel.vim'
 call plug#end()
 
 if has('mac')
