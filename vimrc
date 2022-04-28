@@ -95,10 +95,10 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
-if has('mac')
-    " this must be done before setting the color theme
-    set termguicolors
+" this must be done before setting the color theme
+set termguicolors
 
+if has('mac')
     " uctags understand go
     let g:tagbar_ctags_bin = '/opt/local/bin/uctags'
 endif
