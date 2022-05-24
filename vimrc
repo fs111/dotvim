@@ -83,19 +83,17 @@ call plug#begin('~/.vim/plugged')
 Plug 'majutsushi/tagbar'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-fugitive'
-Plug 'mitsuhiko/fruity-vim-colorscheme'
 Plug 'vim-scripts/matchit.zip'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'itspriddle/vim-shellcheck'
 Plug 'srcery-colors/srcery-vim'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'vimwiki/vimwiki'
 Plug 'gelguy/wilder.nvim'
 Plug 'mtth/scratch.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fs111/vim-ripgrep'
-Plug 'jaawerth/fennel.vim'
+Plug 'ctrlpvim/ctrlp.vim'
 call plug#end()
 
 if has('mac')
