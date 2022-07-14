@@ -94,14 +94,20 @@ Plug 'mtth/scratch.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fs111/vim-ripgrep'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Rigellute/rigel'
 call plug#end()
 
 if has('mac')
     set termguicolors
 endif
 
-colo srcery
-let g:airline_theme="light"
+"colo srcery
+"let g:airline_theme="light"
+
+colo rigel
+let g:rigel_airline = 1
+let g:airline_theme = 'rigel'
+
 " Run PlugInstall if there are missing plugins
 "autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 "  \| PlugInstall --sync | source $MYVIMRC
