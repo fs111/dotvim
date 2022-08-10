@@ -99,6 +99,7 @@ call plug#end()
 
 if has('mac')
     set termguicolors
+    let g:tagbar_ctags_bin = '/opt/local/bin/uctags'
 endif
 
 "colo srcery
