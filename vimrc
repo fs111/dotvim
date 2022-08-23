@@ -87,7 +87,6 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'vim-airline/vim-airline'
 Plug 'scrooloose/nerdtree'
 Plug 'itspriddle/vim-shellcheck'
-Plug 'srcery-colors/srcery-vim'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'gelguy/wilder.nvim'
 Plug 'mtth/scratch.vim'
@@ -95,6 +94,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'fs111/vim-ripgrep'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Rigellute/rigel'
+Plug 'rodjek/vim-puppet'
 call plug#end()
 
 if has('mac')
