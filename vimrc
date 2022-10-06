@@ -95,6 +95,8 @@ Plug 'fs111/vim-ripgrep'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Rigellute/rigel'
 Plug 'rodjek/vim-puppet'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
 call plug#end()
 
 if has('mac')
