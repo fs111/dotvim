@@ -9,6 +9,9 @@ set ignorecase
 set smartcase
 set nowrap
 
+" very useful for go files when they are changed by go fmt
+set autoread
+
 set dir=~/tmp/
 
 set ts=4
