@@ -101,6 +101,7 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 if has('mac')
@@ -111,9 +112,9 @@ endif
 "colo srcery
 "let g:airline_theme="light"
 
-colo rigel
+colo PaperColor
 let g:rigel_airline = 1
-let g:airline_theme = 'rigel'
+let g:airline_theme = 'papercolor'
 
 " Run PlugInstall if there are missing plugins
 "autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
