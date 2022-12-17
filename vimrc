@@ -115,6 +115,7 @@ endif
 colo PaperColor
 let g:rigel_airline = 1
 let g:airline_theme = 'papercolor'
+set background=dark
 
 " Run PlugInstall if there are missing plugins
 "autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
