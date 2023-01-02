@@ -95,7 +95,6 @@ Plug 'mtth/scratch.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fs111/vim-ripgrep'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Rigellute/rigel'
 Plug 'rodjek/vim-puppet'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
@@ -112,10 +111,9 @@ endif
 "colo srcery
 "let g:airline_theme="light"
 
-colo PaperColor
-let g:rigel_airline = 1
-let g:airline_theme = 'papercolor'
 set background=dark
+colo PaperColor
+let g:airline_theme = 'papercolor'
 
 " Run PlugInstall if there are missing plugins
 "autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
