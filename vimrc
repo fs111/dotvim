@@ -130,3 +130,9 @@ call wilder#set_option('modes', ['/', '?', ':'])
 
 " scratch file location
 let g:scratch_persistence_file='~/tmp/.vimscratch'
+
+
+map <leader>lf :LspDocumentFormat<CR>
+map <leader>ld :LspDefinition<CR>
+map <leader>lr :LspRename<CR>
+map <leader>loi :LspCodeActionSync source.organizeImports<CR>
