@@ -42,11 +42,6 @@ set cursorline
 set laststatus=2
 set statusline=%F%m%r%h%w\ (%{&ff}){%y}[%l,%v][%p%%]\ %{strftime(\"%d.%m.%Y\ -\ %H:%M\")}
 
-set relativenumber
-
-" avro idl support
-au BufRead,BufNewFile *.avdl setlocal filetype=avro-idl
-
 " gitit wiki pages are markdown
 au BufRead,BufNewFile *.page setlocal filetype=markdown
 
@@ -63,9 +58,6 @@ au BufRead,BufNewFile *.adoc setlocal filetype=asciidoc
 command! -nargs=0 FormatXml :silent 1,$!xmllint --format --recover - 2>/dev/null
 
 command! -nargs=0 FormatJson :silent 1,$!jq '.' 2>/dev/null
-
-" sql formatter. part of the sqlparse python package
-command! -nargs=0 FormatSQL :silent 1,$!sqlformat-3.10 -k upper -a -s - 2>/dev/null
 
 " toggle outline
 map <F8> :TagbarToggle<CR> 
@@ -104,35 +96,31 @@ Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
 
 if has('mac')
+    " this must be done before setting the color theme
     set termguicolors
+
+    " uctags understand go
     let g:tagbar_ctags_bin = '/opt/local/bin/uctags'
 endif
-
-"colo srcery
-"let g:airline_theme="light"
 
 set background=dark
 colo PaperColor
 let g:airline_theme = 'papercolor'
-
-" Run PlugInstall if there are missing plugins
-"autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
-"  \| PlugInstall --sync | source $MYVIMRC
 
 " wilder.nvim setup
 call wilder#enable_cmdline_enter()
 set wildcharm=<Tab>
 cmap <expr> <Tab> wilder#in_context() ? wilder#next() : "\<Tab>"
 cmap <expr> <S-Tab> wilder#in_context() ? wilder#previous() : "\<S-Tab>"
-
 " only / and ? are enabled by default
 call wilder#set_option('modes', ['/', '?', ':'])
 
 " scratch file location
 let g:scratch_persistence_file='~/tmp/.vimscratch'
 
-
 map <leader>lf :LspDocumentFormat<CR>
 map <leader>ld :LspDefinition<CR>
 map <leader>lr :LspRename<CR>
 map <leader>loi :LspCodeActionSync source.organizeImports<CR>
+
+
