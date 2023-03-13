@@ -122,5 +122,6 @@ map <leader>lf :LspDocumentFormat<CR>
 map <leader>ld :LspDefinition<CR>
 map <leader>lr :LspRename<CR>
 map <leader>loi :LspCodeActionSync source.organizeImports<CR>
+map <leader>lh :LspHover<CR>
 
 
