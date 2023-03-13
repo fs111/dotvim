@@ -9,6 +9,8 @@ set ignorecase
 set smartcase
 set nowrap
 
+set number
+
 " very useful for go files when they are changed by go fmt
 set autoread
 
