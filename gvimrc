@@ -5,6 +5,9 @@ set columns=90
 if has('mac')
     set guifont=CaskaydiaCoveNerdFontCompleteM-Regular:h14
 endif
+if has('linux')
+    set guifont="CaskaydiaCove NF Mono Bold 12"
+endif
 set guioptions-=T
 set guioptions-=m
 " useful for gvim
