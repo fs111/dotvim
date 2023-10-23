@@ -27,11 +27,6 @@ set backspace=2
 set wildmenu
 set wildignore=*.o,*.class,*.so*,*.swp,*.pyc,*.pyo,core
 set wildmode=longest:full
-map <C-J> <C-W>j<C-W>_
-map <C-K> <C-W>k<C-W>_
-map <C-H> <C-W>h<C-W>_
-map <C-L> <C-W>l<C-W>_
-
 
 let mapleader=","
 map ,, gqap
