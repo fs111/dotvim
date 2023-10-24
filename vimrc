@@ -14,6 +14,10 @@ set number
 " very useful for go files when they are changed by go fmt
 set autoread
 
+if !isdirectory("~/tmp")
+    call mkdir("~/tmp", "p")
+endif
+
 set dir=~/tmp/
 
 set ts=4
@@ -38,9 +42,6 @@ set cursorline
 " always have a statusline
 set laststatus=2
 set statusline=%F%m%r%h%w\ (%{&ff}){%y}[%l,%v][%p%%]\ %{strftime(\"%d.%m.%Y\ -\ %H:%M\")}
-
-" gitit wiki pages are markdown
-au BufRead,BufNewFile *.page setlocal filetype=markdown
 
 " gradle build files
 au BufRead,BufNewFile *.gradle setlocal filetype=groovy
@@ -84,7 +85,6 @@ Plug 'mtth/scratch.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fs111/vim-ripgrep'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'rodjek/vim-puppet'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
