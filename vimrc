@@ -80,7 +80,6 @@ Plug 'vim-scripts/matchit.zip'
 Plug 'vim-airline/vim-airline'
 Plug 'itspriddle/vim-shellcheck'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'gelguy/wilder.nvim'
 Plug 'mtth/scratch.vim'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'fs111/vim-ripgrep'
@@ -103,14 +102,6 @@ endif
 set background=dark
 colo PaperColor
 let g:airline_theme = 'papercolor'
-
-" wilder.nvim setup
-call wilder#enable_cmdline_enter()
-set wildcharm=<Tab>
-cmap <expr> <Tab> wilder#in_context() ? wilder#next() : "\<Tab>"
-cmap <expr> <S-Tab> wilder#in_context() ? wilder#previous() : "\<S-Tab>"
-" only / and ? are enabled by default
-call wilder#set_option('modes', ['/', '?', ':'])
 
 " scratch file location
 let g:scratch_persistence_file='~/tmp/.vimscratch'
