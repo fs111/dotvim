@@ -14,10 +14,6 @@ set number
 " very useful for go files when they are changed by go fmt
 set autoread
 
-if !isdirectory("~/tmp")
-    call mkdir("~/tmp", "p")
-endif
-
 set dir=~/tmp/
 
 set ts=4
