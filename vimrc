@@ -83,6 +83,8 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'NLKNguyen/papercolor-theme'
 call plug#end()
