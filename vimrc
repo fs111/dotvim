@@ -45,6 +45,9 @@ au BufRead,BufNewFile *.gradle setlocal filetype=groovy
 " Jenkinsfile
 au BufRead,BufNewFile Jenkinsfile setlocal filetype=groovy
 
+" go html templates
+au BufRead,BufNewFile *.gohtml setlocal filetype=html
+
 " asciidoc files
 au BufRead,BufNewFile *.adoc setlocal filetype=asciidoc
 
