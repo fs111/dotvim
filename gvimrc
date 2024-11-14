@@ -3,7 +3,7 @@ set columns=90
 "set guifont=FiraCode-Retina:h12
 "set guifont=Menlo-Bold:h14
 if has('mac')
-    set guifont=CaskaydiaCoveNerdFontCompleteM-Bold:h14
+    set guifont=CaskaydiaCoveNF-Regular:h14
 endif
 if has('linux')
     set guifont="CaskaydiaCove NF Mono Bold 12"
