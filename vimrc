@@ -85,8 +85,9 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf'
+Plug 'junegunn/goyo.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
-Plug 'NLKNguyen/papercolor-theme'
+Plug 'ayu-theme/ayu-vim'
 call plug#end()
 
 " this must be done before setting the color theme
@@ -98,7 +99,9 @@ if has('mac')
 endif
 
 set background=dark
-colo PaperColor
+let ayuclolor="mirage"
+colo ayu
+
 let g:airline_theme = 'papercolor'
 
 " scratch file location
